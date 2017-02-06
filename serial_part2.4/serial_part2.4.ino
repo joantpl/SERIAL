@@ -22,7 +22,7 @@ void setup()             // run once, when the sketch starts
 
   drive_mb = drive_gb;
   drive_mb = 1024 * drive_gb;   
-  Serial.print("It can store ");  // un cop tenim el resultat de la operació anterior el podem utilitzar per acabar la frase.
+  Serial.print("It can store ");  // En a
   Serial.print(drive_mb);
   Serial.println(" Megabytes!");
 }
