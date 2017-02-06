@@ -1,7 +1,7 @@
 /*************************************************************************
 **                                                                      **
 **                                  Serial                              **
-**       Joan torrescasana                             06/02/2017       **
+**       Joan torrescasana                                 06/02/2017   **
 *************************************************************************/
 
 //****** Includes  *******************************************************
@@ -23,13 +23,11 @@ Serial.println ("a = 3");   //ens escriura que a = 3
 Serial.println ("b = 4");   // ens escriura al terminal que b=4
 
 Serial.print ("h =");
-Serial.println (sqrt(pow(a,2)+(pow(b,2))));
-
- 
+Serial.println (sqrt(pow(a,2)+(pow(b,2))));  // sqrt significa arrel cuadrada i pow significa: elevar la variable (a) al nombre de despres.
 
  }
 
-void loop()         // es repeteix infinitament
+void loop()         // com que nomes s'ha d'executar una vegada el void loop el deixarem buit.
 {
 }
 
