@@ -8,34 +8,28 @@
 
 
 //****** Variables *******************************************************
-float a = 3;
-float b = 2;
-float d;
 
-
+long drive_gb = 100;
+long drive_mb;     // Es necessari canviar el format de les dades per long, aquestes permeten valors de -2,147,483,648 to 2,147,483,647.
 //****** Setup  **********************************************************
 
-void setup()               // run once, when the sketch starts
+void setup()             // run once, when the sketch starts
 {
-  Serial.begin(9600);      // set up Serial library at 9600 bps
+  Serial.begin(9600);    // set up Serial library at 9600 bps
 
-  Serial.println("Here is division: ");
+  Serial.print("Your HD is ");
+  Serial.print(drive_gb);
+  Serial.println(" GB large.");
 
-  Serial.print("a = ");
-  Serial.println(a);
-  Serial.print("b = ");
-  Serial.println(b);
+  drive_mb = 1024 * drive_gb;
 
-  d = a / b;
- 
-  Serial.print("a / b = ");   //no dona 1,5 perque les variables expressades en int no poden tenir decimals.
-  Serial.println(d);
-
+  Serial.print("It can store ");
+  Serial.print(drive_mb);
+  Serial.println(" Megabytes!");
 }
 
-void loop()    // we need this to be here even though its empty
+void loop()   // we need this to be here even though its empty
 {
 }
-
 
 

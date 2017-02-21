@@ -8,9 +8,9 @@
 
 
 //****** Variables *******************************************************
-float a = 3;
-float b = 2;
-float d;
+int a = 3;
+int b = 2;
+long d;
 
 
 //****** Setup  **********************************************************
@@ -28,7 +28,7 @@ void setup()               // run once, when the sketch starts
 
   d = a / b;
  
-  Serial.print("a / b = ");   //no dona 1,5 perque les variables expressades en int no poden tenir decimals.
+  Serial.print("a / b = ");
   Serial.println(d);
 
 }
